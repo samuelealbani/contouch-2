@@ -276,6 +276,11 @@ void loop() {
     value3 = decodeInt(data, 8);
     value4 = decodeInt(data, 12);
 
+    if (value1 > 100000 || value2 > 100000 || value3 > 100000 || value4 > 100000) {
+      Serial.println("Restarting ESP32 due to large value");
+      ESP.restart();  // Restart the ESP32
+    }
+
     OSCMessage msg("/jack0/capacitives/analog");
     String text = "";
     msg.add(value1);

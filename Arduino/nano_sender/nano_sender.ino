@@ -16,6 +16,14 @@ void setup() {
   // put your setup code here, to run once:
   cs_4_2.set_CS_AutocaL_Millis(0xFFFFFFFF);  // turn off autocalibrate on channel 1 - just as an example
 
+  // wait the esp32 for waking up
+  for (int i = 0; i < 2; i++) {
+    digitalWrite(13, HIGH);
+    delay(500);
+    digitalWrite(13, LOW);
+    delay(500);
+  }
+
   Serial.begin(9600);
 }
 
