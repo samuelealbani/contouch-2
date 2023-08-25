@@ -9,7 +9,7 @@ bool isDebugging = false;
 
 CapacitiveSensor cs_4_2 = CapacitiveSensor(4, 2);    // 10 megohm resistor between pins 4 & 2, pin 2 is sensor pin, add wire, foil
 CapacitiveSensor cs_4_5 = CapacitiveSensor(4, 5);    // 10 megohm resistor between pins 7 & 5, pin 5 is sensor pin, add wire, foil
-CapacitiveSensor cs_4_8 = CapacitiveSensor(4, 8);    // 10 megohm resistor between pins 9 & 8, pin 8 is sensor pin, add wire, foil
+CapacitiveSensor cs_4_9 = CapacitiveSensor(4, 9);    // 10 megohm resistor between pins 9 & 8, pin 8 is sensor pin, add wire, foil
 CapacitiveSensor cs_4_10 = CapacitiveSensor(4, 10);  // 10 megohm resistor between pins 9 & 8, pin 8 is sensor pin, add wire, foil
 
 void setup() {
@@ -24,8 +24,8 @@ void loop() {
   long start = millis();
   long value1 = cs_4_2.capacitiveSensor(30);
   long value2 = cs_4_5.capacitiveSensor(30);
-  // long value3 = cs_4_8.capacitiveSensor(30);
-  long value3 = 0;
+  long value3 = cs_4_9.capacitiveSensor(30);
+  // long value3 = 0;
   long value4 = cs_4_10.capacitiveSensor(30);
 
   if (!isDebugging) {

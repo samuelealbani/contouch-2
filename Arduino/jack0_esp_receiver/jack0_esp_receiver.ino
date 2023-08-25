@@ -129,7 +129,7 @@ void loop() {
     Serial.println(fsrReading1);
   }
 
-  OSCMessage msgPress("/jack1/pressure");
+  OSCMessage msgPress("/jack0/pressure");
   msgPress.add(fsrReading0);
   msgPress.add(fsrReading1);
   Udp.beginPacket(outIp, outPort);
@@ -142,7 +142,7 @@ void loop() {
   for (uint8_t i = 0; i < 12; i++) {
     // it if *is* touched and *wasnt* touched before, alert!
     if ((currtouched & _BV(i)) && !(lasttouched & _BV(i))) {
-      OSCMessage msg("/jack1/capacitives/digital");
+      OSCMessage msg("/jack0/capacitives/digital");
       switch (i) {
         case 0:
           msg.add("/0");
@@ -194,7 +194,7 @@ void loop() {
     }
     // if it *was* touched and now *isnt*, alert!
     if (!(currtouched & _BV(i)) && (lasttouched & _BV(i))) {
-      OSCMessage msg("/jack1/capacitives/digital");
+      OSCMessage msg("/jack0/capacitives/digital");
       switch (i) {
         case 0:
           msg.add("/0");
@@ -276,7 +276,7 @@ void loop() {
     value3 = decodeInt(data, 8);
     value4 = decodeInt(data, 12);
 
-    OSCMessage msg("/jack1/capacitives/analog");
+    OSCMessage msg("/jack0/capacitives/analog");
     String text = "";
     msg.add(value1);
     msg.add(value2);
