@@ -37,14 +37,14 @@ void loop() {
   long value4 = cs_4_10.capacitiveSensor(30);
 
   if (!isDebugging) {
-    byte data[16];  // Array to hold the values
+    String msg = "<";
+    msg.concat(String(value1));
+    msg.concat("," + String(value2));
+    msg.concat("," + String(value3));
+    msg.concat("," + String(value4));
+    msg.concat(">");
 
-    encodeInt(data, 0, value1);
-    encodeInt(data, 4, value2);
-    encodeInt(data, 8, value3);
-    encodeInt(data, 12, value4);
-
-    Serial.write(data, sizeof(data));
+    writeString(msg);
   } else {
     // Serial.print(millis() - start);  // check on performance in milliseconds
 
@@ -67,9 +67,10 @@ void loop() {
 }
 
 
-void encodeInt(byte *buffer, int offset, int value) {
-  buffer[offset] = (byte)(value & 0xFF);
-  buffer[offset + 1] = (byte)((value >> 8) & 0xFF);
-  buffer[offset + 2] = (byte)((value >> 16) & 0xFF);
-  buffer[offset + 3] = (byte)((value >> 24) & 0xFF);
-}
+void writeString(String stringData) {  // Used to serially push out a String with Serial.write()
+
+  for (int i = 0; i < stringData.length(); i++) {
+    Serial.write(stringData[i]);  // Push each char 1 by 1 on each loop pass
+  }
+
+}  // end writeString
