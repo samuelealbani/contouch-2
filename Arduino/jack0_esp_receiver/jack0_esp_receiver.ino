@@ -70,8 +70,8 @@ Adafruit_MPR121 cap = Adafruit_MPR121();
 uint16_t lasttouched = 0;
 uint16_t currtouched = 0;
 
-uint8_t touchSensitivity = 6;
-uint8_t releaseSensitivity = 3;
+uint8_t touchSensitivity = 8;
+uint8_t releaseSensitivity = 4;
 
 int fsrAnalogPin0 = 36;  // FSR is connected to analog 0
 int fsrAnalogPin1 = 39;  // FSR is connected to analog 0

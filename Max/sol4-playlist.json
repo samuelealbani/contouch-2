@@ -1,0 +1,17 @@
+{
+	"pattrstorage" : 	{
+		"name" : "sol4-playlist",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"sol4-sampler" : [ 0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
