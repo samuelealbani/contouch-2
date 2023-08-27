@@ -70,8 +70,14 @@ Adafruit_MPR121 cap = Adafruit_MPR121();
 uint16_t lasttouched = 0;
 uint16_t currtouched = 0;
 
-uint8_t touchSensitivity = 8;
-uint8_t releaseSensitivity = 4;
+/*
+touch_threshold (Optional, int): should be between 5 and 30 (lower = more sensitive). Defaults to 12. Typically the touch threshold is a little bigger than the release threshold.
+release_threshold (Optional, int): The release defines the sensitivity for touch detection and should be between 5 and 30. Defaults to 6.
+
+*/
+
+uint8_t touchSensitivity = 5;
+uint8_t releaseSensitivity = 5;
 
 int fsrAnalogPin0 = 36;  // FSR is connected to analog 0
 int fsrAnalogPin1 = 39;  // FSR is connected to analog 0
