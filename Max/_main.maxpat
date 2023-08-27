@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 86.0, 122.0, 1620.0, 969.0 ],
+		"rect" : [ 31.0, 106.0, 1620.0, 969.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -784,7 +784,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1024.252022004127411, 967.0, 24.0, 24.0 ]
+					"patching_rect" : [ 1002.252022004127411, 1010.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -796,7 +796,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 575.0, 959.0, 24.0, 24.0 ]
+					"patching_rect" : [ 601.0, 1014.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -904,8 +904,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1152.752022004127411, 401.0, 117.0, 22.0 ],
-					"text" : "scale 300. 900. 0. 1."
+					"patching_rect" : [ 1087.418688670794154, 440.833004713058472, 103.0, 22.0 ],
+					"text" : "scale 0. 500. 0. 1."
 				}
 
 			}
@@ -10345,6 +10345,13 @@
 			}
 , 			{
 				"name" : "sol2-1.maxpat",
+				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sol4-playlist.json",
 				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
