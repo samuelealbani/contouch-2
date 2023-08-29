@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1004.0, 114.0, 762.0, 961.0 ],
+		"rect" : [ 34.0, 106.0, 1732.0, 971.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,52 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 0,
+					"patching_rect" : [ 224.37731260061264, 900.0, 134.0, 22.0 ],
+					"text" : "osc-wekinator-manager"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 445.0, 900.0, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 572.0, 896.0, 66.0, 22.0 ],
+					"text" : "OSC-route"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 449.0, 934.0, 104.0, 22.0 ],
+					"text" : "udpreceive 12000"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-34",
 					"maxclass" : "newobj",
@@ -424,8 +470,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 152.112620830535889, 704.0, 117.0, 22.0 ],
-					"text" : "scale 300. 900. 0. 1."
+					"patching_rect" : [ 152.112620830535889, 704.0, 103.0, 22.0 ],
+					"text" : "scale 0. 500. 0. 1."
 				}
 
 			}
@@ -807,8 +853,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 506.25, 1036.842095375061035, 29.5, 22.0 ],
-					"text" : "*~"
+					"patching_rect" : [ 506.25, 1036.842095375061035, 34.0, 22.0 ],
+					"text" : "*~ 1."
 				}
 
 			}
@@ -819,8 +865,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 920.0, 1010.0, 29.5, 22.0 ],
-					"text" : "*~"
+					"patching_rect" : [ 920.0, 1010.0, 34.0, 22.0 ],
+					"text" : "*~ 1."
 				}
 
 			}
@@ -840,7 +886,7 @@
 				"box" : 				{
 					"id" : "obj-41",
 					"maxclass" : "newobj",
-					"numinlets" : 13,
+					"numinlets" : 14,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "signal" ],
 					"patching_rect" : [ 85.67442512512207, 819.279070854187012, 783.411296725273132, 22.0 ],
@@ -9180,8 +9226,8 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 68.0, 134.0, 83.0, 22.0 ],
 					"text" : "udp_manager"
 				}
@@ -9192,6 +9238,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 13 ],
+					"source" : [ "obj-1", 3 ]
 				}
 
 			}
@@ -10059,8 +10112,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-29", 3 ],
+					"order" : 0,
+					"source" : [ "obj-64", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-77", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-64", 0 ]
 				}
 
@@ -10068,15 +10129,23 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-92", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-64", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-78", 0 ],
+					"destination" : [ "obj-29", 2 ],
 					"order" : 0,
+					"source" : [ "obj-65", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-78", 0 ],
+					"order" : 1,
 					"source" : [ "obj-65", 0 ]
 				}
 
@@ -10084,15 +10153,23 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-93", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-65", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-79", 0 ],
+					"destination" : [ "obj-29", 1 ],
 					"order" : 0,
+					"source" : [ "obj-66", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-79", 0 ],
+					"order" : 1,
 					"source" : [ "obj-66", 0 ]
 				}
 
@@ -10100,14 +10177,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-94", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-66", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-80", 0 ],
+					"destination" : [ "obj-29", 0 ],
 					"order" : 0,
 					"source" : [ "obj-67", 0 ]
 				}
@@ -10115,8 +10192,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-95", 0 ],
+					"destination" : [ "obj-80", 0 ],
 					"order" : 1,
+					"source" : [ "obj-67", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-95", 0 ],
+					"order" : 2,
 					"source" : [ "obj-67", 0 ]
 				}
 
@@ -10303,6 +10388,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "346328__steaq__bright-tibetan-bell-ding-b-note-cleaner.wav",
+				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max/samples",
+				"patcherrelativepath" : "./samples",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "353032__inspectorj__ambience-peaceful-synth.wav",
 				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max/samples",
 				"patcherrelativepath" : "./samples",
@@ -10310,7 +10402,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "413614__pjcohen__orchestral_concert_tamtam_gong_06.wav",
+				"name" : "545531__rsellick__tibetan-bells-wind-chime-ring-meditation-ohm.wav",
 				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max/samples",
 				"patcherrelativepath" : "./samples",
 				"type" : "WAVE",
@@ -10333,7 +10425,25 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "OpenSoundControl.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "dataset_manager.maxpat",
+				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "debounce.maxpat",
+				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "delay-line.maxpat",
 				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -10346,7 +10456,21 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "highpass-filter.maxpat",
+				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "osc-jacket-parser.maxpat",
+				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "osc-wekinator-manager.maxpat",
 				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -10384,6 +10508,12 @@
 				"name" : "sol_4B-1.maxpat",
 				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
