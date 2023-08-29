@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 168.0, 106.0, 1425.0, 969.0 ],
+		"rect" : [ 280.0, 224.0, 1425.0, 969.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,36 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 166.0, 371.702126860618591, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 132.0, 569.601926326751709, 52.0, 22.0 ],
+					"text" : "switch 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-101",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 224.744684934616089, 1259.687953352928162, 115.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "exportimage $1 png"
 				}
 
@@ -58,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 354.924563407897949, 526.5, 58.0, 22.0 ],
+					"patching_rect" : [ 343.924563407897949, 552.762410163879395, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -108,8 +131,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 12.322107464075089, 1297.111748397350311, 579.268292367458344, 35.0 ],
-					"presentation_linecount" : 2,
-					"text" : "\"Macintosh HD:/Users/samuele/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max/dataset/contouch2_2023-08-26_19-57-26_8674251.png\""
+					"text" : "\"Macintosh HD:/Users/samuele/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max/dataset/contouch2_2023-08-29_18-40-59_2960678.png\""
 				}
 
 			}
@@ -159,7 +181,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 251.454529076814651, 653.601926326751709, 24.0, 24.0 ]
+					"patching_rect" : [ 232.356357544660568, 247.601926326751709, 24.0, 24.0 ]
 				}
 
 			}
@@ -170,7 +192,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 237.222211360931396, 683.763946241140388, 69.0, 22.0 ],
+					"patching_rect" : [ 232.356357544660568, 310.0, 69.0, 22.0 ],
 					"text" : "metro 1000"
 				}
 
@@ -397,8 +419,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 237.222211360931396, 744.5, 99.0, 23.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 237.222211360931396, 763.5, 99.0, 23.0 ],
 					"text" : "date, time, ticks"
 				}
 
@@ -411,7 +432,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 237.222211360931396, 717.5, 24.0, 24.0 ]
+					"patching_rect" : [ 237.222211360931396, 736.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -437,78 +458,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 224.554938942193985, 1034.898373782634735, 353.0, 49.0 ],
 					"text" : "\"Macintosh HD:/Users/samuele/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max/\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 84.0, 465.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-19",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 144.0, 359.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 136.0, 278.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 136.0, 329.0, 69.0, 22.0 ],
-					"text" : "metro 1000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 84.0, 410.0, 52.0, 22.0 ],
-					"text" : "switch 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 84.0, 267.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -593,7 +542,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 326.659577131271362, 371.702126860618591, 81.0, 22.0 ],
+					"patching_rect" : [ 371.5, 364.702126860618591, 81.0, 22.0 ],
 					"text" : "dim 1280 720"
 				}
 
@@ -605,21 +554,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 354.924563407897949, 576.737589836120605, 32.0, 22.0 ],
+					"patching_rect" : [ 343.924563407897949, 603.0, 32.0, 22.0 ],
 					"text" : "path"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"id" : "obj-79",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 82.0, 511.5, 150.0, 37.0 ],
-					"text" : "click here to save matrix as an image"
 				}
 
 			}
@@ -630,7 +566,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 354.89362359046936, 616.737589836120605, 67.0, 22.0 ],
+					"patching_rect" : [ 343.89362359046936, 643.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -1063,7 +999,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-62",
-					"items" : [ "FaceTime HD Camera", ",", "NexiGo N60 FHD Webcam", ",", "NDI Video", ",", "OBS Virtual Camera" ],
+					"items" : [ "FaceTime HD Camera", ",", "NDI Video", ",", "OBS Virtual Camera", ",", "NexiGo N60 FHD Webcam" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1319,36 +1255,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 2 ],
-					"source" : [ "obj-19", 0 ]
+					"destination" : [ "obj-8", 1 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -1501,7 +1409,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -1517,7 +1425,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
-					"midpoints" : [ 246.722211360931396, 744.0, 246.722211360931396, 744.0 ],
+					"midpoints" : [ 246.722211360931396, 763.0, 246.722211360931396, 763.0 ],
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -1570,7 +1478,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-41", 0 ],
+					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-54", 0 ]
 				}
 
@@ -1718,6 +1626,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-94", 0 ],
 					"source" : [ "obj-78", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
