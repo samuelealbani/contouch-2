@@ -40,6 +40,46 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-44",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 844.0, 654.0, 92.0, 23.0 ],
+					"text" : "write 30. h264"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-46",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 844.0, 620.07214399999998, 208.0, 23.0 ],
+					"text" : "write Desktop:/video.mov 30. h264"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 282.0, 684.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -288,7 +328,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 12.322107464075089, 1297.111748397350311, 579.268292367458344, 35.0 ],
-					"text" : "\"Macintosh HD:/Users/samuele/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max/dataset/contouch2_2023-08-31_21-27-20_1797142.png\""
+					"text" : "\"Macintosh HD:/Users/samuele/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max/dataset/contouch2_2023-09-01_17-24-25_3293124.png\""
 				}
 
 			}
@@ -1156,7 +1196,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-62",
-					"items" : [ "FaceTime HD Camera", ",", "NDI Video", ",", "NexiGo N60 FHD Webcam", ",", "OBS Virtual Camera" ],
+					"items" : [ "FaceTime HD Camera", ",", "NexiGo N60 FHD Webcam", ",", "NDI Video", ",", "OBS Virtual Camera" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1528,6 +1568,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
@@ -1651,6 +1698,20 @@
 					"destination" : [ "obj-95", 0 ],
 					"order" : 1,
 					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-46", 0 ]
 				}
 
 			}
