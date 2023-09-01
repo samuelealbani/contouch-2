@@ -153,7 +153,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 802.774816036224365, 673.054095631837981, 45.0, 22.0 ],
-					"presentation_linecount" : 3,
 					"text" : "0 1500"
 				}
 
@@ -425,7 +424,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 748.81601744890213, 781.82093379735943, 52.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "$1 5000"
 				}
 
@@ -1818,7 +1816,7 @@
 					"patching_rect" : [ 1372.9291956341267, 834.300397726297433, 510.085870444774628, 195.94293600082392 ],
 					"pitchcorrection" : 0,
 					"pitchshift" : [ 4.250109466460612 ],
-					"pitchshiftcent" : [ 2505 ],
+					"pitchshiftcent" : [ -498 ],
 					"quality" : "basic",
 					"timestretch" : [ 1 ]
 				}
@@ -2014,7 +2012,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2188.273783700466083, 540.831720471382141, 120.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "setclip 1 pitchshift $1"
 				}
 
@@ -2781,7 +2778,7 @@
 								"selection" : [ 0.0, 0.009708737864078 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"pitchshift" : 3.35,
+									"pitchshift" : 1.2,
 									"vol" : 0.1
 								}
 
@@ -2802,8 +2799,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2104.484913544654773, 703.278151273727417, 158.794816553592682, 43.096352159976959 ],
 					"pitchcorrection" : 0,
-					"pitchshift" : [ 3.600839593672438 ],
-					"pitchshiftcent" : [ 2093 ],
+					"pitchshift" : [ 3.350012936350348 ],
+					"pitchshiftcent" : [ 316 ],
 					"quality" : "basic",
 					"timestretch" : [ 1 ]
 				}
@@ -4347,7 +4344,7 @@
 								"id" : "u410008195",
 								"loop" : 0,
 								"content_state" : 								{
-									"pitchshift" : 2.95,
+									"pitchshift" : 3.75,
 									"timestretch" : 1
 								}
 
@@ -4368,8 +4365,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1832.908359259366989, 314.87560373902329, 159.381727635860443, 40.59154862165451 ],
 					"pitchcorrection" : 0,
-					"pitchshift" : [ 2.95 ],
-					"pitchshiftcent" : [ 1873 ],
+					"pitchshift" : [ 3.75 ],
+					"pitchshiftcent" : [ 2288 ],
 					"quality" : "basic",
 					"timestretch" : [ 1 ]
 				}
@@ -4407,7 +4404,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2382.562507154941613, 525.123697056770311, 50.0, 22.0 ],
-					"text" : "2"
+					"text" : "0"
 				}
 
 			}
@@ -5187,7 +5184,7 @@
 								"loop" : 0,
 								"content_state" : 								{
 									"timestretch" : 1,
-									"pitchshift" : 0.600000000000001
+									"pitchshift" : 1.93
 								}
 
 							}
@@ -5200,7 +5197,7 @@
 								"loop" : 0,
 								"content_state" : 								{
 									"timestretch" : 1,
-									"pitchshift" : 0.600000000000001
+									"pitchshift" : 1.93
 								}
 
 							}
@@ -5213,7 +5210,7 @@
 								"loop" : 0,
 								"content_state" : 								{
 									"timestretch" : 1,
-									"pitchshift" : 0.600000000000001
+									"pitchshift" : 1.93
 								}
 
 							}
@@ -5233,8 +5230,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2344.640351176261902, 602.783885359764099, 346.276594340801239, 168.063829243183136 ],
 					"pitchcorrection" : 0,
-					"pitchshift" : [ 0.600000000000001 ],
-					"pitchshiftcent" : [ -884 ],
+					"pitchshift" : [ 1.93 ],
+					"pitchshiftcent" : [ 1138 ],
 					"quality" : "basic",
 					"timestretch" : [ 1 ]
 				}
@@ -5255,12 +5252,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-239",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1656.875944852828979, 1470.548938393592834, 50.0, 22.0 ],
-					"text" : "0."
+					"patching_rect" : [ 1656.875944852828979, 1470.548938393592834, 50.0, 35.0 ],
+					"text" : "0.114064"
 				}
 
 			}
@@ -9223,7 +9221,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 1245.622094333171844, 223.253602840900385, 36.0, 22.0 ],
-					"text" : "> 0.2"
+					"text" : "> 0.5"
 				}
 
 			}
