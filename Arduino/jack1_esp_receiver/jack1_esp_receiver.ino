@@ -52,12 +52,12 @@ int value2;
 int value3;
 int value4;
 
-char ssid[] = "G11";        // your network SSID (name)
-char pass[] = "Fb)M2}8ht";  // your network password
+char ssid[] = "Samuele-WIFI";        // your network SSID (name)
+char pass[] = "goodlife";  // your network password
 
 WiFiUDP Udp;  // A UDP instance to let us send and receive packets over UDP
 WiFiUDP UdpOnSerial;
-const IPAddress outIp(10, 100, 117, 166);  // remote IP of your computer
+const IPAddress outIp(192, 168, 8, 197);  // remote IP of your computer
 const unsigned int outPort = 3333;         // remote port to receive OSC
 
 

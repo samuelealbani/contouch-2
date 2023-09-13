@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 106.0, 1732.0, 973.0 ],
+		"rect" : [ 199.0, 143.0, 1333.0, 743.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -263,17 +263,6 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 370.536500811576843, 988.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-29",
-					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 0,
-					"patching_rect" : [ -9.765449643135071, 647.0, 134.0, 22.0 ],
-					"text" : "osc-wekinator-manager"
 				}
 
 			}
@@ -9996,15 +9985,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 3 ],
-					"midpoints" : [ 489.236276507377625, 564.0, 114.734550356864929, 564.0 ],
-					"order" : 2,
-					"source" : [ "obj-64", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-77", 0 ],
 					"order" : 1,
 					"source" : [ "obj-64", 0 ]
@@ -10017,15 +9997,6 @@
 					"midpoints" : [ 489.236276507377625, 564.0, 525.952304029464585, 564.0 ],
 					"order" : 0,
 					"source" : [ "obj-64", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 2 ],
-					"midpoints" : [ 417.739759564399719, 564.0, 76.401217023531601, 564.0 ],
-					"order" : 2,
-					"source" : [ "obj-65", 0 ]
 				}
 
 			}
@@ -10048,15 +10019,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 1 ],
-					"midpoints" : [ 352.338104009628296, 564.0, 38.067883690198265, 564.0 ],
-					"order" : 2,
-					"source" : [ "obj-66", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-79", 0 ],
 					"order" : 0,
 					"source" : [ "obj-66", 0 ]
@@ -10069,15 +10031,6 @@
 					"midpoints" : [ 352.338104009628296, 564.0, 313.734550356864929, 564.0 ],
 					"order" : 1,
 					"source" : [ "obj-66", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"midpoints" : [ 282.858206033706665, 564.0, 0.0, 564.0, 0.0, 645.0, -0.265449643135071, 645.0 ],
-					"order" : 2,
-					"source" : [ "obj-67", 0 ]
 				}
 
 			}
@@ -10305,10 +10258,6 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "OpenSoundControl.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "dataset_manager.maxpat",
 				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max",
 				"patcherrelativepath" : ".",
@@ -10357,13 +10306,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "osc-wekinator-manager.maxpat",
-				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "sol2-1.maxpat",
 				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max",
 				"patcherrelativepath" : ".",
@@ -10395,12 +10337,6 @@
 				"name" : "sol_4B-1.maxpat",
 				"bootpath" : "~/Library/CloudStorage/OneDrive-GoldsmithsCollege/Final Project/Project/Repository/MAFinalProject/Max",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
